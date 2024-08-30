@@ -9074,7 +9074,18 @@ textarea.form-control {
 
 .ftco-animate {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+color: #bfbfbf; }
+
+.icon-linkedin::before {
+  content: url('../images/linkedin.png'); /* Replace with the actual path to your YouTube icon file */
+}
+.icon-github::before {
+  content: url('../images/github.png'); /* Replace with the actual path to your YouTube icon file */
+}
+.icon-leetcode::before {
+  content: url('../images/l3.png'); /* Replace with the actual path to your YouTube icon file */
+}
 
 .bg-primary {
   background: #ffbd39 !important; }
@@ -9143,15 +9154,20 @@ textarea.form-control {
 .ftco-footer-social li {
   list-style: none;
   margin: 0 10px 0 0;
-  display: inline-block; }
-  .ftco-footer-social li a {
-    height: 50px;
-    width: 50px;
-    display: block;
-    float: left;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    position: relative; }
+  display: inline-block;
+  color: #fff;
+}
+.ftco-footer-social li a {
+  height: 50px;
+  width: 50px;
+  display: block;
+  float: left;
+  background: #e6e6e6; /* White background */
+  border-radius: 50%;
+  position: relative;
+}
+
+
     .ftco-footer-social li a span {
       position: absolute;
       font-size: 26px;
@@ -9159,7 +9175,8 @@ textarea.form-control {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+     }
     .ftco-footer-social li a:hover {
       color: #fff; }
 
