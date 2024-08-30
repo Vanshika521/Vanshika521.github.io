@@ -8541,10 +8541,10 @@ h1, h2, h3, h4, h5,
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 600;
-          font-size: 14px;
+          font-size: 18px;
           letter-spacing: 3px;
           text-transform: uppercase;
-          color: #ffbd39; }
+          color:  #fff; }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           position: relative;
           z-index: 1; }
