@@ -9357,7 +9357,8 @@ color: #bfbfbf; }
       margin-bottom: 30px; } }
   .blog-entry .text {
     width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: justify; }
     .blog-entry .text .heading {
       font-size: 20px;
       margin-bottom: 16px;
