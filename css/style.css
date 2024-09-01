@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -4389,6 +4389,9 @@ input[type="button"].btn-block {
       -webkit-animation: none;
       animation: none; } }
 
+
+      
+
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6673,7 +6676,7 @@ button.bg-dark:focus {
 
 .mb-5,
 .my-5 {
-  margin-bottom: 1rem !important; }
+  margin-bottom: 0rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -6787,7 +6790,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important; }
+  padding-bottom: 2rem !important; }
 
 .pl-5,
 .px-5 {
@@ -9076,16 +9079,18 @@ textarea.form-control {
 .ftco-animate {
   opacity: 0;
   visibility: hidden;
-color: #bfbfbf; }
+color: #bfbfbf;
+margin-right: 0px;
+ }
 
 .icon-linkedin::before {
-  content: url('../images/linkedin.png'); /* Replace with the actual path to your YouTube icon file */
+  content: url('../images/linkedin.png'); 
 }
 .icon-github::before {
-  content: url('../images/github.png'); /* Replace with the actual path to your YouTube icon file */
+  content: url('../images/github.png'); 
 }
 .icon-leetcode::before {
-  content: url('../images/l3.png'); /* Replace with the actual path to your YouTube icon file */
+  content: url('../images/l3.png'); 
 }
 
 .bg-primary {
@@ -9118,7 +9123,7 @@ color: #bfbfbf; }
 .ftco-footer {
   font-size: 16px;
   background: #000000;
-  padding: 7em 0;
+  padding: 3em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
@@ -9142,6 +9147,7 @@ color: #bfbfbf; }
       background: #fff;
       border: 2px solid #fff !important; }
   .ftco-footer p {
+    margin-top: 0;
     color: rgba(255, 255, 255, 0.7); }
   .ftco-footer a {
     color: rgba(255, 255, 255, 0.7); }
@@ -9154,16 +9160,21 @@ color: #bfbfbf; }
 
 .ftco-footer-social li {
   list-style: none;
-  margin: 0 2px 0 0;
+  margin: 0 5px 0 0;
   display: inline-block;
   color: #fff;
 }
+
+.ftco-footer-social .normal-txt {
+  margin-right: 20px; 
+}
+
 .ftco-footer-social li a {
   height: 50px;
   width: 50px;
   display: block;
   float: left;
-  background: #e6e6e6; /* White background */
+  background: #e6e6e6;
   border-radius: 50%;
   position: relative;
 }
@@ -9224,7 +9235,8 @@ color: #bfbfbf; }
 .big-4 {
   font-size: 42px;
   margin: 0 auto;
-  transform: scaleX(1.2); /* Stretch the text by 1.2 times */ }
+  transform: scaleX(1.2); 
+}
 
 .heading-section {
   position: relative; }
@@ -9349,7 +9361,8 @@ color: #bfbfbf; }
   height: 180px; }
 
 .blog-entry {
-  position: relative; }
+  position: relative;
+  margin-bottom: 0px;  }
   @media (min-width: 768px) {
     .blog-entry {
       margin-bottom: 30px; } }
