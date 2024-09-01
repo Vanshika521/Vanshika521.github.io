@@ -4387,10 +4387,7 @@ input[type="button"].btn-block {
   @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
       -webkit-animation: none;
-      animation: none; } }
-
-
-      
+      animation: none; } }      
 
 .media {
   display: -webkit-box;
