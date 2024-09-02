@@ -4341,7 +4341,94 @@ input[type="button"].btn-block {
   to {
     background-position: 0 0; } }
 
+
+    h1{
+      text-align: center;
+      }
+      h3{
+      margin: 5px;
+      }
+      .skill{
+      
+      width: 500px;
+      margin: 60px auto;
+      color: #fff;
+      padding: 20px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      }
+
+      .skill ul {
+        list-style-type: none; /* Remove default bullets */
+        padding: 0; /* Remove default padding */
+    }
+    
+    .skill li {
+        margin: 20px 0;
+        padding: 10px;
+    }
+    
+
+      .bar{
+      background: #353b48;
+      display: block;
+      height: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.3); 
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .bar:hover{
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    .bar span{
+      height: 20px;
+      float: left;
+      background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+    }
+    .bar .html{
+      width:90%;
+      animation: html 3s;
+     }
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width:90%
+  }
+  
+}
+     .css{
+      width:50%;
+      animation: css 3s;
+     }
+
+     @keyframes css {
+      0%{
+        width: 0%;
+      }
+      100%{
+        width:50%
+      }
+    }
+
+     .php{
+      width:70%;
+      animation: php 3s;
+     }
+     @keyframes php {
+      0%{
+        width: 0%;
+      }
+      100%{
+        width:70%
+      }
+    }
 .progress {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4349,9 +4436,11 @@ input[type="button"].btn-block {
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+}
 
 .progress-bar {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8897,12 +8986,19 @@ h1, h2, h3, h4, h5,
 .progress-wrap {
   width: 100%;
   margin-bottom: 30px; }
+
+  
   .progress-wrap h3 {
     font-size: 20px;
     margin-bottom: 10px;
     font-weight: 500; }
 
+    
+
 .progress {
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 50%; */
   height: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
