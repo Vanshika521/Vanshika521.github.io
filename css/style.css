@@ -4351,15 +4351,15 @@ input[type="button"].btn-block {
       .skill{
       
       width: 500px;
-      margin: 60px auto;
+      margin: 0px auto;
       color: #fff;
       padding: 20px;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
       }
 
       .skill ul {
-        list-style-type: none; /* Remove default bullets */
-        padding: 0; /* Remove default padding */
+        list-style-type: none; 
+        padding: 0; 
     }
     
     .skill li {
@@ -4369,6 +4369,7 @@ input[type="button"].btn-block {
     
 
       .bar{
+        
       background: #353b48;
       display: block;
       height: 20px;
@@ -4384,7 +4385,8 @@ input[type="button"].btn-block {
     .bar span{
       height: 20px;
       float: left;
-      background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+      background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
+      
     }
     .bar .html{
       width:90%;
@@ -4425,6 +4427,7 @@ input[type="button"].btn-block {
         width:70%
       }
     }
+/*     
 .progress {
   margin-left: auto;
   margin-right: auto;
@@ -4476,7 +4479,7 @@ input[type="button"].btn-block {
   @media (prefers-reduced-motion: reduce) {
     .progress-bar-animated {
       -webkit-animation: none;
-      animation: none; } }      
+      animation: none; } }       */
 
 .media {
   display: -webkit-box;
@@ -8982,7 +8985,7 @@ h1, h2, h3, h4, h5,
       color: #000000; }
       .services-1:hover h3:after {
         background: #000000; }
-
+/* 
 .progress-wrap {
   width: 100%;
   margin-bottom: 30px; }
@@ -8991,14 +8994,14 @@ h1, h2, h3, h4, h5,
   .progress-wrap h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    font-weight: 500; }
+    font-weight: 500; } */
 
-    
+/*     
 
 .progress {
   /* margin-left: auto;
   margin-right: auto;
-  width: 50%; */
+  width: 50%; 
   height: 10px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -9038,7 +9041,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     font-size: 20px;
     font-weight: 400;
-    color: #fff; }
+    color: #fff; } */
 
 .ftco-hireme {
   background: #ffbd39;
