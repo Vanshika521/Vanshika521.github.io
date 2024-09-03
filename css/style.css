@@ -4340,6 +4340,7 @@ input[type="button"].btn-block {
     background-position: 1rem 0; }
   to {
     background-position: 0 0; } }
+
     h1 {
       text-align: center;
     }
@@ -4349,9 +4350,9 @@ input[type="button"].btn-block {
     }
     
     .skill {
-      animation: fillbars 0.1s 1;
       width: 700px;
       margin: 0 auto;
+      /* color: #000; */
       color: #fff;
       padding: 20px;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -4369,91 +4370,93 @@ input[type="button"].btn-block {
     
     .bar {
       background: #353b48;
-      display: block;
       height: 20px;
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 10px;
-      overflow: hidden;
-      position: relative; /* Allows positioning of inner elements */
+      position: relative; /* Allows absolute positioning of child elements */
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    }
-    
-    .bar:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
     
     .bar span {
-      height: 20px;
-      float: left;
-      position: relative; /* For positioning percentage */
-      background: #e74c3c; /* Updated to red for better visibility */
+      height: 100%;
+      display: block;
+      position: relative;
+      background: #e74c3c;
+      animation: fill 2s forwards;
+      border-radius: 10px; /* Ensures rounded edges match the bar */
     }
     
     .bar .c {
-      width: 90%;
-      animation: c 2.0s forwards;
+      animation: fill-c 2s forwards;
     }
     
-    @keyframes c {
+    @keyframes fill-c {
       0% {
-        width: 0%;
+        width: 0;
       }
       100% {
-        width: 90%;
+        width: 90%; /* Fill to 90% */
       }
     }
     
     .bar .cpp {
-      width: 70%;
-      animation: cpp 2.0s forwards;
+      animation: fill-cpp 2s forwards;
     }
     
-    @keyframes cpp {
+    @keyframes fill-cpp {
       0% {
-        width: 0%;
+        width: 0;
       }
       100% {
-        width: 70%;
+        width: 70%; /* Fill to 70% */
       }
     }
     
     .bar .js {
-      width: 60%;
-      animation: js 2.0s forwards;
+      animation: fill-js 2s forwards;
     }
     
-    @keyframes js {
+    @keyframes fill-js {
       0% {
-        width: 0%;
-      }
-      100% {
-        width: 60%;
-      }
-    }
-    
-    
-    .skill-per {
-      position: absolute;
-      right: 10px;
-      top: -5px;
-      padding: 2px 5px;
-      background: #f1f1f1;
-      color: #000;
-      border-radius: 4px;
-      font-size: 12px;
-      top: -5px;
-    }
-    
-    
-    @keyframes fillbars {
-      from {
         width: 0;
       }
-      to {
+      100% {
+        width: 60%; /* Fill to 60% */
+      }
+    }
+    .skill-per {
+      position: absolute;
+      top: -38px; /* Position label above the progress bar */
+      right: -10px; /* Adjust to ensure label is visible */
+      padding: 4px 6px;
+      /* background: #fff; */
+      border-radius: 4px;
+      font-size: 15px;
+      transform: translateX(0); /* Align with progress bar end */
+      transition: transform 2s ease-in-out; /* Animate sliding in sync with the bar */
+    }
+
+    /* .skill-per::after{
+      content: "";
+      position: absolute;
+      width:10px;
+      height:10px;
+      background: #fff ;
+      top: 24px;
+      right: 17px;
+      transform : translate(50%) rotate(45deg);
+      border-radius: 2px;
+    }
+     */
+    @keyframes fill {
+      0% {
+        width: 0;
+      }
+      100% {
         width: 100%;
       }
     }
+    
     
     
     
