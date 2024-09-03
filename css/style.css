@@ -4381,7 +4381,7 @@ input[type="button"].btn-block {
       height: 100%;
       display: block;
       position: relative;
-      background: #e74c3c;
+      background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
       animation: fill 2s forwards;
       border-radius: 10px; /* Ensures rounded edges match the bar */
     }
@@ -4408,22 +4408,91 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 70%; /* Fill to 70% */
+        width: 95%; /* Fill to 70% */
       }
     }
     
-    .bar .js {
-      animation: fill-js 2s forwards;
+    .bar .java {
+      animation: fill-java 2s forwards;
     }
     
-    @keyframes fill-js {
+    @keyframes fill-java {
       0% {
         width: 0;
       }
       100% {
-        width: 60%; /* Fill to 60% */
+        width: 95%; /* Fill to 60% */
       }
     }
+
+    .bar .dsa {
+      animation: fill-dsa 2s forwards;
+    }
+    
+    @keyframes fill-dsa {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 80%; /* Fill to 70% */
+      }
+    }
+
+    .bar .python {
+      animation: fill-python 2s forwards;
+    }
+    
+    @keyframes fill-python {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 70%; /* Fill to 70% */
+      }
+    }
+
+    .bar .sql {
+      animation: fill-sql 2s forwards;
+    }
+    
+    @keyframes fill-sql {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 90%; /* Fill to 70% */
+      }
+    }
+
+    .bar .html {
+      animation: fill-html 2s forwards;
+    }
+    
+    @keyframes fill-html {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 75%; /* Fill to 70% */
+      }
+    }
+
+    .bar .github {
+      animation: fill-github 2s forwards;
+    }
+    
+    @keyframes fill-github {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 85%; /* Fill to 70% */
+      }
+    }
+
+   
+
+
     .skill-per {
       position: absolute;
       top: -38px; /* Position label above the progress bar */
