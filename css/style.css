@@ -4341,6 +4341,8 @@ input[type="button"].btn-block {
   to {
     background-position: 0 0; } }
 
+
+  
     h1 {
       text-align: center;
     }
@@ -4352,9 +4354,8 @@ input[type="button"].btn-block {
     .skill {
       width: 700px;
       margin: 0 auto;
-      /* color: #000; */
       color: #fff;
-      padding: 20px;
+      padding: 10px;
       box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
     
@@ -4364,7 +4365,7 @@ input[type="button"].btn-block {
     }
     
     .skill li {
-      margin: 20px 0;
+      margin: 0px 0;
       padding: 10px;
     }
     
@@ -4373,17 +4374,21 @@ input[type="button"].btn-block {
       height: 20px;
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 10px;
-      position: relative; /* Allows absolute positioning of child elements */
+      position: relative; 
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
+
+
+   
     
-    .bar span {
+    
+     .bar span {
       height: 100%;
       display: block;
       position: relative;
       background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
       animation: fill 2s forwards;
-      border-radius: 10px; /* Ensures rounded edges match the bar */
+      border-radius: 10px; 
     }
     
     .bar .c {
@@ -4395,7 +4400,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 90%; /* Fill to 90% */
+        width: 90%; 
       }
     }
     
@@ -4408,7 +4413,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 95%; /* Fill to 70% */
+        width: 95%; 
       }
     }
     
@@ -4421,7 +4426,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 95%; /* Fill to 60% */
+        width: 95%; 
       }
     }
 
@@ -4434,7 +4439,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 80%; /* Fill to 70% */
+        width: 80%; 
       }
     }
 
@@ -4447,7 +4452,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 70%; /* Fill to 70% */
+        width: 70%;
       }
     }
 
@@ -4460,7 +4465,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 90%; /* Fill to 70% */
+        width: 90%; 
       }
     }
 
@@ -4473,7 +4478,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 75%; /* Fill to 70% */
+        width: 75%; 
       }
     }
 
@@ -4486,7 +4491,7 @@ input[type="button"].btn-block {
         width: 0;
       }
       100% {
-        width: 85%; /* Fill to 70% */
+        width: 85%; 
       }
     }
 
@@ -4495,14 +4500,13 @@ input[type="button"].btn-block {
 
     .skill-per {
       position: absolute;
-      top: -38px; /* Position label above the progress bar */
-      right: -10px; /* Adjust to ensure label is visible */
+      top: -38px; 
+      right: -10px; 
       padding: 4px 6px;
-      /* background: #fff; */
       border-radius: 4px;
       font-size: 15px;
-      transform: translateX(0); /* Align with progress bar end */
-      transition: transform 2s ease-in-out; /* Animate sliding in sync with the bar */
+      transform: translateX(0); 
+      transition: transform 2s ease-in-out;
     }
 
     /* .skill-per::after{
@@ -4524,268 +4528,7 @@ input[type="button"].btn-block {
       100% {
         width: 100%;
       }
-    }
-    
-    
-    
-    
-/* 
-    h1{
-      text-align: center;
-      }
-      h3{
-      margin: 5px;
-      }
-      .skill{
-      animation: fillbars 0.1s 1;
-      width: 700px;
-      margin: 0px auto;
-      color: #fff;
-      padding: 20px;
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-      }
-
-
-      .skill ul {
-        list-style-type: none; 
-        padding: 0; 
-    }
-    
-    .skill li {
-        margin: 20px 0;
-        padding: 10px;
-    }
-    
-
-      .bar{
-        
-      background: #353b48;
-      display: block;
-      height: 20px;
-      border: 1px solid rgba(0, 0, 0, 0.3); 
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    }
-    .bar:hover{
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    }
-    .bar span{
-      height: 20px;
-      float: left;
-      background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
-      
-    }
-
-
-    
-    .bar .c{
-      width: 98%; 
-      animation: c 2.0s forwards;
-     }
-    @keyframes c {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:98%
-      } 
-      
-    }
-
-    .cpp {
-      width: 95%; 
-      animation: cpp 2.0s forwards;
-    }
-
-    @keyframes cpp {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:95%
-      }
-    }
-
-    .java {
-      width: 90%; 
-      animation: java 2.0s forwards;
-    }
-
-    @keyframes java {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:90%
-      }
-    }
-
-    .dsa {
-      width: 0%; 
-      animation: dsa 2.0s forwards;
-    }
-
-    @keyframes dsa {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:80%
-      }
-    }
-
-    .python {
-      width: 0%; 
-      animation: python 2.0s forwards;
-    }
-
-    @keyframes python {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:70%
-      }
-    }
-
-     .sql {
-      width: 0%; 
-      animation: sql 2.0s forwards;
-     }
-
-     @keyframes sql {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:90%
-      }
-    }
-
-    .bar .html{
-      width: 0%; 
-      animation: html 2.0s forwards;
-     }
-    @keyframes html {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:75%
-      }
-  }
-
-     .github{
-        width: 0%; 
-        animation: github 2.0s forwards;
-     }
-     @keyframes github {
-      0%{
-        width: 0%;
-      }
-      100%{
-        width:85%
-      }
-    } */
-
-    /* .skill-per{
-      height:14px;
-      border-radius: 3px;
-      position: relative;
-    }
-
-    .skill-per::before {
-      content: attr(per);
-      position: absolute;
-      padding: 4px 6px;
-      background: #f1f1f1;
-      border-radius: 4px;
-      font-size: 12px;
-      top: -35px;
-      right: 0;
-      transform: translateX(50%);
-      color: #000;
-    }
-    
-    /* Skill bar indicator 
-    .skill-per:after {
-      content: '';
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: #f1f1f1;
-      top: 20px;
-      right: 0;
-      transform: translateX(50%);
-      border-radius: 2px;
-    }
-
-    @keyframes fillbars {
-      from {
-        width: 0;
-
-      }
-      to{
-        width: 100%;
-      }
-      
-    } */
-/*     
-.progress {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 1rem;
-  overflow: hidden;
-  font-size: 0.75rem;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-}
-
-.progress-bar {
-
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #007bff;
-  -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
-  transition: width 0.6s ease; }
-  @media (prefers-reduced-motion: reduce) {
-    .progress-bar {
-      -webkit-transition: none;
-      -o-transition: none;
-      transition: none; } }
-
-.progress-bar-striped {
-  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 1rem 1rem; }
-
-.progress-bar-animated {
-  -webkit-animation: progress-bar-stripes 1s linear infinite;
-  animation: progress-bar-stripes 1s linear infinite; }
-  @media (prefers-reduced-motion: reduce) {
-    .progress-bar-animated {
-      -webkit-animation: none;
-      animation: none; } }       */
+    } 
 
 .media {
   display: -webkit-box;
