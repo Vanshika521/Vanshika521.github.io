@@ -1,17 +1,27 @@
-const resumeSection = document.getElementById('resume-section');
-const progressBars = document.querySelectorAll('.bar');
+document.addEventListener("DOMContentLoaded", function () {
+  const skillsSection = document.getElementById("skills-section");
+  const progressBars = document.querySelectorAll(".progress");
 
-const observer = new IntersectionObserver((entries) => {
-  if (entries[0].isIntersecting) {
-    progressBars.forEach((bar, index) => {
-      const percentage = bar.querySelector('.skill-per').textContent;
-      const progress = bar.querySelector('.bar span');
-      progress.style.width = `${percentage}%`;
-      progress.style.transition = 'width 0.5s ease-in-out';
-    });
-  }
-}, {
-  threshold: 0.5,
+  // Set up the Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Animate the progress bar when it is in view
+          const bar = entry.target;
+          const percentage = bar.getAttribute("data-percentage");
+          bar.style.width = percentage;
+        } else {
+          // Reset the progress bar when it goes out of view
+          entry.target.style.width = "0%";
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  // Observe each progress bar
+  progressBars.forEach((bar) => {
+    observer.observe(bar);
+  });
 });
-
-observer.observe(resumeSection);

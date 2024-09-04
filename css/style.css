@@ -4350,6 +4350,10 @@ input[type="button"].btn-block {
     h3 {
       margin: 5px;
     }
+    .skill h3 {
+      font-size: 22px; /* or any other size */
+    }
+    
     
     .skill {
       width: 700px;
@@ -4377,11 +4381,6 @@ input[type="button"].btn-block {
       position: relative; 
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
-
-
-   
-    
-    
      .bar span {
       height: 100%;
       display: block;
@@ -4391,6 +4390,30 @@ input[type="button"].btn-block {
       border-radius: 10px; 
     }
     
+
+     .bar span {
+      width: 0; /* Set the initial width to 0 for reset effect */
+      height: 100%;
+      display: block;
+      background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
+      border-radius: 10px;
+      transition: width 0s ease-in-out; /* Smooth transition */
+    }
+
+   
+    .bar span.animate {
+      animation: fill 1s forwards;
+    }
+    
+    @keyframes fill {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: var(--percentage);
+      }
+    }
+
     .bar .c {
       animation: fill-c 2s forwards;
     }
