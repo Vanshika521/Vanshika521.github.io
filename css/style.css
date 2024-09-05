@@ -4583,6 +4583,9 @@ input[type="button"].btn-block {
     box-shadow:  0 0 8px #bbb;
   }
 
+  .abc {
+    text-align: center;
+}
 
   .h2 {
     text-align: left;
