@@ -4583,16 +4583,18 @@ input[type="button"].btn-block {
     box-shadow:  0 0 8px #bbb;
   }
 
-  button{
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #ffbd39;
-    /* background-color: #ffa500; */
-    color: #fff;
-    border:none;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
+
+  .h2 {
+    text-align: left;
+}
+
+.custom-text {
+  text-align: justify;
+  font-size: 24px; /* Adjust the size as needed */
+  margin-right: 50px;
+  margin-left: 0px;
+}
+
 
 .media {
   display: -webkit-box;
