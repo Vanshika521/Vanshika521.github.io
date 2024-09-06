@@ -4602,28 +4602,52 @@ input[type="button"].btn-block {
 
 
 
-..credential-section {
-  text-align: center;
-  padding: 50px;
-  background-color: #f9f9f9;
+
+
+.icon-c1::before {
+  content: url('../images/certificate1.png'); 
 }
 
-.slider {
+
+
+.credential-section {
+  text-align: center;
+  padding: 50px;
+  position: relative; 
+}
+
+/* .slider {
   position: relative;
   max-width: 800px;
   margin: auto;
   overflow: hidden;
+} */
+
+.slider {
+  position: relative;
+  max-width: none; /* Remove the max-width restriction */
+  width: 100%; /* Allow slider to take full width */
+  margin: auto;
+  overflow: visible; /* Allow images to overflow if necessary */
 }
+
+.slide img {
+  width: 500%; /* Or another appropriate size */
+  height: auto !important;
+  max-width: none !important;
+}
+
 
 .slide {
   display: none;
   text-align: center;
 }
-
+/* 
 .slide img {
   width: 100%;
   height: auto;
-}
+  transform: scale(1.5); /* Scale the image to 150% 
+} */
 
 .prev, .next {
   cursor: pointer;
@@ -4632,12 +4656,12 @@ input[type="button"].btn-block {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  /* background-color: rgba(0,0,0,0.5); Add background color for better visibility */
 }
 
 .next {
@@ -4645,9 +4669,15 @@ input[type="button"].btn-block {
   border-radius: 3px 0 0 3px;
 }
 
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
 
 
 
