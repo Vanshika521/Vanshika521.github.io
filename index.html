@@ -49,21 +49,6 @@
 }
 
 
-/* 
-.skill-mf .progress {
-  /* background-color: #cde1f8; 
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-} */
-
-
-/* Animation styles */
 #typing-animation {
   position: relative;
   font-size: 30px;
@@ -76,7 +61,6 @@
 
 #typing-animation:before {
   content: "";
-  /* position: absolute; */
   top: 0;
   left: 0;
   width: 0;
@@ -126,7 +110,7 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Vanshika Rani</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,13 +122,35 @@
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 			  <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-			  <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certificate</span></a></li> 
 			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			  <li class="nav-item"><a href="#credential-section" class="nav-link"><span>Credentials</span></a></li> 
+			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
-	  </nav>
+	  </nav> -->
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Vanshika Rani</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+	
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#credential-section" class="nav-link"><span>Credentials</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
 	  <section id="home-section" class="hero">
 		  <div class="home-slider  owl-carousel">
 	       <div class="slider-item ">
@@ -157,11 +163,7 @@
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
 		          		<h6 span class="subheading">WELCOME TO MY WORLD!</span></h6>
-						 <!-- <span class="subheading">WELCOME TO MY WORLD!</span> -->
 			          	<h1 class="mb-4 mt-3 no-wrap">I'm <span>Vanshika Rani</span></h1>
-
-
-						<!-- Element to contain animated typing -->
 						<span id="typing-animation"></span>
 
 						<script>
@@ -662,17 +664,25 @@
             </ul>
         </div>
         <div class="col-md-5 ftco-animate">
-            <form>
-                <div class="form-group">
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<div class="form-group">
                     <input type="text" name="name" placeholder="Your Name">
                 </div>
+
+				<input type="hidden" name="access_key" value="fea83a0c-6ee9-4b25-bde4-4cefdfa140c3">
+
                 <div class="form-group">
                     <input type="email" name="email" placeholder="Your Email">
                 </div>
                 <div class="form-group">
                     <textarea name="message" placeholder="Your Message"></textarea>
-                </div class ="abc">
-                <button type="submit" class="btn btn-primary py-3 px-4" style="margin-right: 20px; ">Send Message</button>
+
+					<div class="abc">
+						<button type="submit" class="btn btn-primary py-3 px-4">Send Message</button>
+					</div>
+				</form>
+                <!-- </div class ="abc">
+                <button type="submit" class="btn btn-primary py-3 px-4" style="margin-right: 20px; ">Send Message</button> -->
             </form>
         </div>
     </div>
