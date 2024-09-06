@@ -1,27 +1,21 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const skillsSection = document.getElementById("skills-section");
-  const progressBars = document.querySelectorAll(".progress");
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-  // Set up the Intersection Observer
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          // Animate the progress bar when it is in view
-          const bar = entry.target;
-          const percentage = bar.getAttribute("data-percentage");
-          bar.style.width = percentage;
-        } else {
-          // Reset the progress bar when it goes out of view
-          entry.target.style.width = "0%";
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  // Observe each progress bar
-  progressBars.forEach((bar) => {
-    observer.observe(bar);
-  });
+        slides[slideIndex-1].style.display = "block";
+    }
 });
+</script>
