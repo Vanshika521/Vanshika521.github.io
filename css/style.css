@@ -4600,10 +4600,6 @@ input[type="button"].btn-block {
   margin-left: 0px;
 }
 
-
-
-
-
 .icon-c1::before {
   content: url('../images/certificate1.png'); 
 }
