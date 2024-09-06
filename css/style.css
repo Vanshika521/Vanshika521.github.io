@@ -4612,6 +4612,33 @@ input[type="button"].btn-block {
   content: url('../images/certificate3.png'); 
 }
 
+.icon-c4::before {
+  content: url('../images/certificate4.png'); 
+}
+
+.icon-c5::before {
+  content: url('../images/certificate5.png'); 
+}
+
+.icon-c6::before {
+  content: url('../images/certificate6.png'); 
+}
+
+.icon-c7::before {
+  content: url('../images/certificate7.png'); 
+}
+
+.icon-c8::before {
+  content: url('../images/certificate8.png'); 
+}
+
+.certificate-description {
+  font-size: 20px; 
+   color: #e6e6e6; 
+  margin-top: 10px; 
+}
+
+
 .credential-section {
   text-align: center;
   padding: 50px;
