@@ -4616,13 +4616,6 @@ input[type="button"].btn-block {
   position: relative; 
 }
 
-/* .slider {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-} */
-
 .slider {
   position: relative;
   max-width: none; /* Remove the max-width restriction */
@@ -4665,17 +4658,18 @@ input[type="button"].btn-block {
 }
 
 .next {
-  right: 0;
+  right: -30px; /* Adjust this value to move it slightly to the right */
   border-radius: 3px 0 0 3px;
 }
 
+
 .prev {
-  left: 0;
+  left: -10px;
   border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #d39e00;
 }
 
 
@@ -9401,11 +9395,11 @@ margin-right: 0px;
     font-size: 24px; }
 
 .ftco-section {
-  padding: 2em 0;
+  padding: 0em 0;
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 2em 0; } }
+      padding: 0em 0; } }
 
 .ftco-no-pt {
   padding-top: 0 !important; }
