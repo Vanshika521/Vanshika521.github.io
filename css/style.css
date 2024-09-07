@@ -6975,7 +6975,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 3rem !important; }
+  margin-top: 2rem !important; }
 
 .mr-5,
 .mx-5 {
@@ -9626,10 +9626,16 @@ margin-right: 0px;
   @media (max-width: 767.98px) {
     .blog-entry {
       margin-bottom: 30px; } }
-  .blog-entry .text {
-    width: 100%;
-    margin: 0 auto;
-    text-align: justify; }
+
+    .blog-entry .text {
+      text-align: justify;
+      text-justify: inter-word;
+      max-width: 340px; 
+      margin: 0 auto; 
+      line-height: 1.5; 
+      padding: 0 10px; 
+    }
+
     .blog-entry .text .heading {
       font-size: 20px;
       margin-bottom: 16px;
