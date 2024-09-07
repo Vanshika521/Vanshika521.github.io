@@ -4645,31 +4645,28 @@ input[type="button"].btn-block {
   position: relative; 
 }
 
-.slider {
+ .slider {
   position: relative;
-  max-width: none; /* Remove the max-width restriction */
-  width: 100%; /* Allow slider to take full width */
+  max-width: none; 
+  width: 100%;
   margin: auto;
-  overflow: visible; /* Allow images to overflow if necessary */
-}
+overflow: visible; 
+} 
+
 
 .slide img {
-  width: 500%; /* Or another appropriate size */
+  width: 500%; 
   height: auto !important;
   max-width: none !important;
-}
+} 
 
 
 .slide {
   display: none;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
 }
-/* 
-.slide img {
-  width: 100%;
-  height: auto;
-  transform: scale(1.5); /* Scale the image to 150% 
-} */
+
 
 .prev, .next {
   cursor: pointer;
@@ -4683,11 +4680,11 @@ input[type="button"].btn-block {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  /* background-color: rgba(0,0,0,0.5); Add background color for better visibility */
+ 
 }
 
 .next {
-  right: -30px; /* Adjust this value to move it slightly to the right */
+  right: -30px; 
   border-radius: 3px 0 0 3px;
 }
 
@@ -4699,9 +4696,7 @@ input[type="button"].btn-block {
 
 .prev:hover, .next:hover {
   background-color: #d39e00;
-}
-
-
+} 
 
 
 .media {
