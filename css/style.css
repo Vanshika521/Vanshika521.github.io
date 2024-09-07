@@ -4352,7 +4352,7 @@ input[type="button"].btn-block {
       margin: 5px;
     }
     .skill h3 {
-      font-size: 22px; /* or any other size */
+      font-size: 22px;
     }
     
     
@@ -4393,13 +4393,13 @@ input[type="button"].btn-block {
     
 
      .bar span {
-      width: 0; /* Set the initial width to 0 for reset effect */
+      width: 0; 
       height: 100%;
       display: block;
       background: linear-gradient(135deg, rgba(234, 183, 58, 1) 0%, rgba(204, 142, 0, 1) 100%);
       border-radius: 10px;
-      transition: width 0s ease-in-out; /* Smooth transition */
-    }
+      transition: width 0s ease-in-out; 
+     }
 
    
     .bar span.animate {
@@ -4595,7 +4595,7 @@ input[type="button"].btn-block {
 
 .custom-text {
   text-align: justify;
-  font-size: 24px; /* Adjust the size as needed */
+  font-size: 24px;
   margin-right: 50px;
   margin-left: 0px;
 }
@@ -8699,7 +8699,6 @@ h1, h2, h3, h4, h5,
   font-weight: 900;
   font-size: 24px;
   font-style:normal;
-  /* text-transform: uppercase;  */
 }
 
 .hero h3.vr {
@@ -9786,7 +9785,7 @@ margin-right: 0px;
       letter-spacing: 1px;
       font-weight: 600; }
 
-/* Blog*/
+
 .post-info {
   font-size: 12px;
   text-transform: uppercase;
