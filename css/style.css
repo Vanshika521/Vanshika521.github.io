@@ -4461,16 +4461,16 @@ input[type="button"].btn-block {
       }
     }
 
-    .bar .python {
-      animation: fill-python 2s forwards;
+    .bar .Kotlin {
+      animation: fill-Kotlin 2s forwards;
     }
     
-    @keyframes fill-python {
+    @keyframes fill-Kotlin {
       0% {
         width: 0;
       }
       100% {
-        width: 70%;
+        width: 85%;
       }
     }
 
